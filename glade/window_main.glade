@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.36.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="image_btn_submit">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">mail-send</property>
+  </object>
+  <object class="GtkWindow" id="window_main">
+    <property name="width_request">400</property>
+    <property name="height_request">400</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Fast &amp; Eat</property>
+    <property name="default_width">400</property>
+    <property name="default_height">400</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child>
+      <object class="GtkStack" id="stack">
+        <property name="name">stack</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="transition_type">crossfade</property>
+        <child>
+          <object class="GtkFrame" id="main">
+            <property name="name">main_frame</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
+            <child>
+              <object class="GtkFixed">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkButton" id="btn_inscription">
+                    <property name="label" translatable="yes">Inscription</property>
+                    <property name="name">btn_inscription</property>
+                    <property name="width_request">106</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <signal name="clicked" handler="inscription" object="stack" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">68</property>
+                    <property name="y">200</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="btn_connexion">
+                    <property name="label" translatable="yes">Connexion</property>
+                    <property name="name">btn_connexion</property>
+                    <property name="width_request">104</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <signal name="clicked" handler="connexion" object="label_title" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">250</property>
+                    <property name="y">199</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_title">
+                    <property name="width_request">148</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Bienvenue a Fast &amp; Eat</property>
+                    <property name="justify">center</property>
+                  </object>
+                  <packing>
+                    <property name="x">127</property>
+                    <property name="y">16</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+            <child type="label_item">
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page1</property>
+            <property name="title" translatable="yes">main</property>
+            <property name="needs_attention">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFrame" id="inscription">
+            <property name="name">frame</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
+            <child>
+              <object class="GtkFixed">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width_request">204</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Inscription</property>
+                  </object>
+                  <packing>
+                    <property name="x">111</property>
+                    <property name="y">26</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="submit_inscription">
+                    <property name="label" translatable="yes">validez !!</property>
+                    <property name="width_request">100</property>
+                    <property name="height_request">20</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="image">image_btn_submit</property>
+                    <property name="always_show_image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">155</property>
+                    <property name="y">268</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="box_rb">
+                    <property name="width_request">110</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <property name="homogeneous">True</property>
+                    <child>
+                      <object class="GtkRadioButton" id="rb_Etudiant">
+                        <property name="label" translatable="yes">Etudiant</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">rb_famille</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="rb_famille">
+                        <property name="label" translatable="yes">Famille</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw_indicator">True</property>
+                        <property name="group">rb_Etudiant</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">155</property>
+                    <property name="y">186</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entry_id_inscription">
+                    <property name="width_request">168</property>
+                    <property name="height_request">34</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="text" translatable="yes">identifiant</property>
+                  </object>
+                  <packing>
+                    <property name="x">134</property>
+                    <property name="y">102</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entry_pass_inscription">
+                    <property name="width_request">168</property>
+                    <property name="height_request">34</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="text" translatable="yes">mot de passe</property>
+                    <property name="input_purpose">password</property>
+                    <property name="input_hints">GTK_INPUT_HINT_LOWERCASE | GTK_INPUT_HINT_UPPERCASE_CHARS | GTK_INPUT_HINT_NO_EMOJI | GTK_INPUT_HINT_NONE</property>
+                  </object>
+                  <packing>
+                    <property name="x">134</property>
+                    <property name="y">151</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+            <child type="label_item">
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page2</property>
+            <property name="title" translatable="yes">connexion</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+  </object>
+</interface>
