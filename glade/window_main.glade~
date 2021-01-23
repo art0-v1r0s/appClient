@@ -41,7 +41,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="inscription" object="stack" swapped="no"/>
+                    <signal name="clicked" handler="inscription" object="label_title" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">68</property>
@@ -57,7 +57,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="connexion" object="__glade_unnamed_2" swapped="no"/>
+                    <signal name="clicked" handler="connexion" object="label_title" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">250</property>

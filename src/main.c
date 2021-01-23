@@ -20,13 +20,16 @@ int main(int argc, char *argv[])
 }
 
 void inscription(GtkButton * button,GtkStack * stack){
+
+    //printf("ta cliqué bonhomme\n");
+    //printf(gtk_stack_get_visible_child_name (stack));
+    gtk_stack_set_visible_child_name (stack,"page2");
     
-    gtk_stack_get_visible_child_name(stack);
-    //gtk_stack_set_visible_child_name(stack,window);
+    
 }
 void connexion(GtkButton * button,GtkLabel * label_title){
 
-    gtk_label_set_text(label_title, "ta cliquez connard");
+    gtk_label_set_text(label_title, "bonjour mr vous avez cliqué sur connexion");
 }
 
 // called when window is closed
