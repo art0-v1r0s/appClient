@@ -6,7 +6,7 @@ CC=gcc
 # debug
 DEBUG=-g
 # optimisation
-OPT=-O0
+OPT=-O6
 # warnings
 WARN=-Wall
 

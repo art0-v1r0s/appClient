@@ -282,7 +282,7 @@
                     <property name="receives_default">True</property>
                     <property name="image">image_btn_submit</property>
                     <property name="always_show_image">True</property>
-                    <signal name="clicked" handler="submitCo" object="entry_id_connexion" swapped="no"/>
+                    <signal name="clicked" handler="submitCo" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">159</property>
