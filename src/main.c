@@ -1,5 +1,7 @@
 #include <gtk/gtk.h>
 
+
+
 int main(int argc, char *argv[])
 {
     GtkBuilder      *builder;
@@ -27,9 +29,13 @@ void inscription(GtkButton * button,GtkStack * stack){
     
     
 }
-void connexion(GtkButton * button,GtkLabel * label_title){
+void connexion(GtkButton * button,GtkStack * stack){
 
-    gtk_label_set_text(label_title, "bonjour mr vous avez cliqué sur connexion");
+    gtk_stack_set_visible_child_name (stack,"page3");
+}
+void submitCo(GtkButton * button,GtkEntry * entryIdCo){
+
+    printf("vous avez taper: %s\n",gtk_entry_get_text (entryIdCo));
 }
 
 // called when window is closed
