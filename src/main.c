@@ -46,6 +46,9 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+void home(GtkButton * button,GtkStack * stack){
+    gtk_stack_set_visible_child_name (stack,"page1");
+}
 
 void inscription(GtkButton * button,GtkStack * stack){
 
