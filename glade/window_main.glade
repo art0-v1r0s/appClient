@@ -146,6 +146,7 @@
                     <property name="receives_default">True</property>
                     <property name="image">isubmit_ins</property>
                     <property name="always_show_image">True</property>
+                    <signal name="clicked" handler="connexion" object="stack" swapped="no"/>
                     <signal name="clicked" handler="submitIns" swapped="no"/>
                   </object>
                   <packing>
@@ -326,6 +327,7 @@
                     <property name="image">submit_co</property>
                     <property name="use_underline">True</property>
                     <property name="always_show_image">True</property>
+                    <signal name="clicked" handler="commande" object="stack" swapped="no"/>
                     <signal name="clicked" handler="submitCo" swapped="no"/>
                   </object>
                   <packing>

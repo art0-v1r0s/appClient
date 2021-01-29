@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     //get pointer to entry widgets ->entry inscription
     widgets->entry_id_inscription = GTK_WIDGET(gtk_builder_get_object(builder, "entry_id_inscription"));
     widgets->entry_pass_inscription = GTK_WIDGET(gtk_builder_get_object(builder, "entry_pass_inscription"));
+
     widgets->rb_etudiant = GTK_WIDGET(gtk_builder_get_object(builder, "rb_etudiant"));
     widgets->rb_famille = GTK_WIDGET(gtk_builder_get_object(builder, "rb_famille"));
 
@@ -32,18 +33,19 @@ int main(int argc, char *argv[])
 
     gtk_widget_show(window);
     gtk_main();
-
+    //free memory
     g_slice_free(app_widgets, widgets);
 
     return 0;
 }
 void home(GtkButton * button,GtkStack * stack){
+    printf("%p\n",stack);
     gtk_stack_set_visible_child_name (stack,"page1");
 }
 
 void inscription(GtkButton * button,GtkStack * stack){
 
-    //printf("ta cliqué bonhomme\n");
+    printf("%p\n",stack);
     //printf(gtk_stack_get_visible_child_name (stack));
     gtk_stack_set_visible_child_name (stack,"page2");
     
@@ -51,7 +53,15 @@ void inscription(GtkButton * button,GtkStack * stack){
 }
 void connexion(GtkButton * button,GtkStack * stack){
 
+    printf("%p\n",stack);
     gtk_stack_set_visible_child_name (stack,"page3");
+    
+}
+void commande(GtkButton * button,GtkStack * stack){
+
+    printf("%p\n",stack);
+    gtk_stack_set_visible_child_name (stack,"page4");
+    
 }
 
 void submitCo(GtkButton * button,app_widgets * entryCo){
@@ -63,8 +73,6 @@ void submitCo(GtkButton * button,app_widgets * entryCo){
 
 }
 void submitIns(GtkButton * button,app_widgets * entryIns){
-
-
 
  if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(entryIns->rb_etudiant)))
  {
@@ -85,7 +93,6 @@ if (gtk_entry_get_text_length (GTK_ENTRY(entryIns->entry_pass_inscription))>5)
         printf("vous avez pass: %s\n",gtk_entry_get_text (GTK_ENTRY(entryIns->entry_pass_inscription)));
 }else
     printf("votre mot de passe est inférieur a 5\n");
-
 
 }
 
