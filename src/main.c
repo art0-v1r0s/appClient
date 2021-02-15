@@ -57,10 +57,17 @@ void connexion(GtkButton * button,GtkStack * stack){
     gtk_stack_set_visible_child_name (stack,"page3");
     
 }
-void commande(GtkButton * button,GtkStack * stack){
 
+void commande(GtkButton * button,GtkStack * stack){
+    //while tant que gtk button label == 0
     printf("%p\n",stack);
     gtk_stack_set_visible_child_name (stack,"page4");
+    
+}
+void profil(GtkButton * button,GtkStack * stack){
+
+    printf("%p\n",stack);
+    gtk_stack_set_visible_child_name (stack,"page5");
     
 }
 
@@ -95,6 +102,7 @@ if (gtk_entry_get_text_length (GTK_ENTRY(entryIns->entry_pass_inscription))>5)
     printf("votre mot de passe est inférieur a 5\n");
 
 }
+//validez en changans le gtkButton label apres aucune erreur
 
 // called when window is closed
 void on_window_main_destroy()
