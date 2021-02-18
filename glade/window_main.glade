@@ -447,7 +447,7 @@
                     <property name="use-underline">True</property>
                     <property name="image-position">right</property>
                     <property name="always-show-image">True</property>
-                    <signal name="clicked" handler="on_btn_profil_clicked" object="stack" swapped="no"/>
+                    <signal name="clicked" handler="profil" object="stack" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">350</property>

@@ -1,5 +1,5 @@
 # change application name here (executable output name)
-TARGET=template_app
+TARGET= appClient
 
 # compiler
 CC=gcc

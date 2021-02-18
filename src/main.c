@@ -64,7 +64,7 @@ void commande(GtkButton * button,GtkStack * stack){
     gtk_stack_set_visible_child_name (stack,"page4");
     
 }
-void profil(GtkButton * button,GtkStack * stack){
+void profile(GtkButton * button,GtkStack * stack){
 
     printf("%p\n",stack);
     gtk_stack_set_visible_child_name (stack,"page5");
